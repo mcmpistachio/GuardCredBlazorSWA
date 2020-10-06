@@ -1,0 +1,40 @@
+﻿@page "/comp/{id}"
+
+
+<p>This is the Object ID for the Employee</p>
+<p>@ID</p>
+
+<p>@emp.DisplayName</p>
+
+
+
+
+@code {
+
+    [Parameter]
+    public string ID { get; set; }
+
+    User emp;
+
+
+
+
+    private static string clientId = "8c1b31ea-5b35-40e1-bebf-179fc3fcbec4";
+    private static string tenantID = "4046c68b-c58b-4882-bf97-59a4f2b44512";
+    private static string clientSecret = "nF-Bu3augj1_z4jF._g8g39ZWMPvCma~W3";
+    private static IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
+        .Create(clientId)
+        .WithTenantId(tenantID)
+        .WithClientSecret(clientSecret)
+        .Build();
+
+    static ClientCredentialProvider authProvider = new ClientCredentialProvider(confidentialClientApplication);
+
+
+    private async Task getGraph(MouseEventArgs args, string userID)
+    {
+        GraphServiceClient graphClient = new GraphServiceClient(authProvider);
+        emp = await graphClient.Users[userID].Request().GetAsync();
+    }
+
+}

@@ -1,0 +1,9 @@
+D:\GuardCredBlazorSWA\Shared\bin\Debug\netstandard2.0\Shared.deps.json
+D:\GuardCredBlazorSWA\Shared\bin\Debug\netstandard2.0\Shared.dll
+D:\GuardCredBlazorSWA\Shared\bin\Debug\netstandard2.0\Shared.pdb
+D:\GuardCredBlazorSWA\Shared\obj\Debug\netstandard2.0\Shared.AssemblyInfoInputs.cache
+D:\GuardCredBlazorSWA\Shared\obj\Debug\netstandard2.0\Shared.AssemblyInfo.cs
+D:\GuardCredBlazorSWA\Shared\obj\Debug\netstandard2.0\Shared.dll
+D:\GuardCredBlazorSWA\Shared\obj\Debug\netstandard2.0\Shared.pdb
+D:\GuardCredBlazorSWA\Shared\obj\Debug\netstandard2.0\Shared.csproj.CoreCompileInputs.cache
+D:\GuardCredBlazorSWA\Shared\obj\Debug\netstandard2.0\Shared.csprojAssemblyReference.cache
